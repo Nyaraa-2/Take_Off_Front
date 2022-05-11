@@ -1,14 +1,13 @@
 <template>
   <div class="home">
-    <test />
+    <LayoutButton bg="secondary" color="white">Inscription</LayoutButton>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
+import LayoutButton from '../components/LayoutButton.vue'
 export default {
   name: 'Home',
-  components: {},
+  components: { LayoutButton },
 }
 </script>
