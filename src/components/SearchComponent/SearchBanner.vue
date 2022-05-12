@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import LayoutButton from '@/components/LayoutButton'
+import LayoutButton from '../CommonComponent/LayoutButton.vue'
 export default {
   name: 'SearchBanner',
   components: { LayoutButton },

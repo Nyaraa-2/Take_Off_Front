@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import LayoutButton from './LayoutButton.vue'
+import LayoutButton from '../CommonComponent/LayoutButton.vue'
 export default {
   components: { LayoutButton },
   name: 'Card',

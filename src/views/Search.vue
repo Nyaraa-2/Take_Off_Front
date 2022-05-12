@@ -30,8 +30,8 @@
 </template>
 
 <script>
-import Card from '@/components/Card'
-import SearchBanner from '@/components/SearchBanner'
+import Card from '@/components/SearchComponent/Card.vue'
+import SearchBanner from '@/components/SearchComponent/SearchBanner.vue'
 export default {
   data() {
     return {

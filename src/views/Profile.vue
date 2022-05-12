@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ProfilBanner from '../components/ProfileBanner.vue'
+import ProfilBanner from '../components/ProfileComponent/ProfileBanner.vue'
 export default {
   components: { ProfilBanner },
 }

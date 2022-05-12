@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import CustomInput from '../components/CustomInput.vue'
+import CustomInput from '../components/CommonComponent/CustomInput.vue'
 
 export default {
   name: 'Home',

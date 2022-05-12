@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Ratting from './ProfileComponent/Ratting'
+import Ratting from './Ratting.vue'
 
 export default {
   components: { Ratting },
