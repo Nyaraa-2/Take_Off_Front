@@ -1,6 +1,16 @@
 <template>
   <div>
-    <button type="button" :class="`rounded-xl bg-${bg} px-15 py-2 text-white`">
+    <button
+      type="button"
+      :class="[
+        'rounded-xl px-15 py-2 text-white',
+        {
+          'bg-primary': primary,
+          'bg-secondary': secondary,
+          'bg-tertiary': tertiary,
+        },
+      ]"
+    >
       <span class="font-semibold"> <slot></slot></span>
     </button>
   </div>
@@ -10,7 +20,9 @@
 export default {
   name: 'layoutbutton',
   props: {
-    bg: String,
+    primary: Boolean,
+    secondary: Boolean,
+    tertiary: Boolean,
   },
 }
 </script>

@@ -2,7 +2,7 @@
   <div>
     <div class="home">
       <!-- <nav-bar /> -->
-      <LayoutButton bg="secondary">Inscription</LayoutButton>
+      <LayoutButton tertiary>Inscription</LayoutButton>
     </div>
   </div>
 </template>
