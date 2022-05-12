@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Register from '../views/Register.vue'
 import Search from '@/views/Search.vue'
+import Profil from '@/views/Profile.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -20,6 +21,11 @@ const routes = [
     path: '/search',
     name: 'Search ',
     component: Search,
+  },
+  {
+    path: '/profile',
+    name: 'Profil ',
+    component: Profil,
   },
 ]
 

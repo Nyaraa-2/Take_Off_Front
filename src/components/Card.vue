@@ -9,7 +9,7 @@
     />
     <div class="p-3 display_1">
       <div>
-        <LayoutButton class="display">250€</LayoutButton>
+        <LayoutButton primary class="display">250€</LayoutButton>
       </div>
       <span class="text-sm text-primary">Andrea Forbes</span>
       <h3 class="font-semibold text-xl leading-6 text-gray-700 my-2">
@@ -19,9 +19,9 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia amet
         ab in nam recusandae ullam, reiciendis quo facilis laudantium rem sit.
       </p>
-      <a class="mt-3 block text-primary font-semibold" href="#"
-        >Voir le profil >></a
-      >
+      <a class="mt-3 block text-primary font-semibold" href="#">
+        <router-link to="/profile">Voir le profil >></router-link>
+      </a>
     </div>
   </div>
 </template>
