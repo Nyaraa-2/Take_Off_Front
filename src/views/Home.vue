@@ -1,16 +1,21 @@
 <template>
   <div>
     <div class="home">
-      <!-- <nav-bar /> -->
-      <LayoutButton tertiary>Inscription</LayoutButton>
+      <CustomInput
+        placeholder="Mon placeholder test"
+        name="test"
+        type="text"
+        label="Mon input test"
+      />
     </div>
   </div>
 </template>
 
 <script>
-import LayoutButton from '../components/LayoutButton.vue'
+import CustomInput from '../components/CustomInput.vue'
+
 export default {
   name: 'Home',
-  components: { LayoutButton },
+  components: { CustomInput },
 }
 </script>
