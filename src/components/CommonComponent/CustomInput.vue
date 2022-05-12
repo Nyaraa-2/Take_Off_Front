@@ -2,23 +2,48 @@
   <div>
     <label hidden :for="name">{{ label }}</label>
     <input
-      class="border-1 border-bg-gray-400 p-3 bg-red transition h-10 rounded-md focus:outline-none w-1/3 text-black text-lg"
+      class="w-full border-1 border-bg-gray-400 p-3 bg-red transition h-10 rounded-md focus:outline-none text-black text-lg"
       :type="type"
       :name="name"
       :id="name"
       :placeholder="placeholder"
+      v-bind:value="value"
+      v-on:input="$emit('input', $event.target.value)"
     />
   </div>
 </template>
 
 <script>
+import logMixin from '@/mixins/log.js'
 export default {
   name: 'CustomInput',
+  mixins: [logMixin],
   props: {
-    name: String,
-    type: String,
-    placeholder: String,
-    label: String,
+    name: {
+      type: String,
+      required: true,
+    },
+    type: {
+      type: String,
+      required: true,
+    },
+    placeholder: {
+      type: String,
+      required: true,
+    },
+    label: {
+      type: String,
+      required: true,
+    },
+    value: {
+      type: String,
+      required: true,
+    },
+  },
+  methods: {
+    emitInput(value) {
+      this.$emit('input', value)
+    },
   },
 }
 </script>

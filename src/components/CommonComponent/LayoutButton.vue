@@ -1,7 +1,8 @@
 <template>
   <div>
     <button
-      type="button"
+      @click="submitButton"
+      type="submit"
       :class="[
         'rounded-xl px-15 py-2 text-white',
         {
@@ -23,6 +24,17 @@ export default {
     primary: Boolean,
     secondary: Boolean,
     tertiary: Boolean,
+    action: String,
+  },
+  data() {
+    return {
+      doAction: this.action,
+    }
+  },
+  methods: {
+    submitButton() {
+      this.$emit('submit', this.action)
+    },
   },
 }
 </script>
