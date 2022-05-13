@@ -1,17 +1,12 @@
 <template>
-  <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/register">Register</router-link> |
-      <router-link to="/search">Search</router-link>
-    </div>
-    <router-view /> -->
-
-  <div class="bg-gray-100 font-sans w-full">
-    <div class="bg-white shadow">
+  <div class="bg-gray-100 font-sans w-full border-b-1 border-bg-primary">
+    <div class="bg-white">
       <div class="container mx-auto px-4">
         <div class="flex items-center justify-between py-4">
-          <div class="text-3xl font-extrabold font-Poppins">TakeOff</div>
-          <div class="hidden sm:flex sm:items-center">
+          <div class="text-3xl font-extrabold font-Poppins">
+            <router-link to="/">TakeOff</router-link>
+          </div>
+          <div class="hidden sm:flex gap-20 sm:items-center">
             <a
               href="#"
               class="text-secondary text-sm font-semibold hover:text-primary mr-4"

@@ -26,14 +26,14 @@ export default {
     tertiary: Boolean,
     action: String,
   },
-  data() {
-    return {
-      doAction: this.action,
-    }
-  },
+  // methods: {
+  //   submitButton() {
+  //     this.$emit('submit', this.action)
+  //   },
+  // },
   methods: {
     submitButton() {
-      this.$emit('submit', this.action)
+      this.$emit('submit')
     },
   },
 }

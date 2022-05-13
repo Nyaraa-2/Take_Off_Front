@@ -2,10 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import InstantSearch from 'vue-instantsearch'
 import 'windi.css'
 
 Vue.config.productionTip = false
-
+Vue.use(InstantSearch)
 new Vue({
   router,
   store,
