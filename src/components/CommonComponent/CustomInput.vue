@@ -14,10 +14,9 @@
 </template>
 
 <script>
-import logMixin from '@/mixins/log.js'
 export default {
   name: 'CustomInput',
-  mixins: [logMixin],
+
   props: {
     name: {
       type: String,

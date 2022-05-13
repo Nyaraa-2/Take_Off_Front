@@ -21,7 +21,7 @@
       v-on:keyup.enter="submit"
     />
 
-    <LayoutButton @submit="click" action="search" primary class="w-1/3"
+    <LayoutButton @submit="doSearch" primary class="w-1/3"
       >Rechercher</LayoutButton
     >
   </div>
@@ -30,6 +30,8 @@
 <script>
 import LayoutButton from '../CommonComponent/LayoutButton.vue'
 import CustomInput from '@/components/CommonComponent/CustomInput.vue'
+import { getSearch } from '../../services/searchMethods'
+
 export default {
   name: 'SearchBanner',
   components: { LayoutButton, CustomInput },
@@ -37,14 +39,22 @@ export default {
     return {
       searchJobValue: '',
       searchCityValue: '',
+      results: [],
     }
   },
+
   methods: {
-    click(action) {
-      console.log(action)
+    async doSearch() {
+      this.$emit('results', await getSearch(this.searchCityValue))
     },
   },
 }
+// await getSearch(
+//   this.searchCityValue ? this.searchCityValue : '',
+//   this.searchJobValue ? this.searchJobValue : '',
+//   '',
+//   ''
+// )
 </script>
 
 <style></style>
