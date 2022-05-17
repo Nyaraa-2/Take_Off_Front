@@ -41,7 +41,6 @@ export default {
         'STH0HNRO4C',
         'bda89733a7507b9097cd494fa4a5fa01'
       ),
-      languages_search: 'Technologies',
     }
   },
 }

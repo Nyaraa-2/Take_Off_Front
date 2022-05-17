@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-white rounded-lg border shadow-md max-w-xs md:max-w-none overflow-hidden"
+    class="bg-white rounded-lg border shadow-md min-h-90 max-h-150 max-w-xs min-w-xs md:max-w-none min-w-xs overflow-hidden"
   >
     <img
       class="h-56 lg:h-40 w-full object-cover"
@@ -57,7 +57,7 @@ export default {
 <style>
 .display {
   position: absolute;
-  left: 150px;
+  left: 200px;
   top: -25px;
   text-align: center;
 }
